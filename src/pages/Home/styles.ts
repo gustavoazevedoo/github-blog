@@ -71,6 +71,7 @@ export const PostCard = styled.a`
 
   header {
     display: flex;
+    gap: 1rem;
     align-items: baseline;
     justify-content: space-between;
 
@@ -80,7 +81,7 @@ export const PostCard = styled.a`
       font-size: 1.25rem;
       color: ${({ theme }) => theme['base-title']};
 
-      max-width: 17.5rem;
+      /* max-width: 17.5rem; */
     }
 
     span {
@@ -94,5 +95,7 @@ export const PostCard = styled.a`
     -webkit-line-clamp: 4;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+
+    max-width: 22.775rem;
   }
 `
