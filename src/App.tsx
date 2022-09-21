@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components'
 import { Header } from './components/Header'
-import { Profile } from './components/Profile'
+import { Home } from './pages/Home'
 import { GlobalStyle } from './styles/GlobalStyle'
 import { defaultTheme } from './styles/themes/default'
 
@@ -10,7 +10,7 @@ export function App() {
       <GlobalStyle />
       <Header />
 
-      <Profile />
+      <Home />
     </ThemeProvider>
   )
 }
