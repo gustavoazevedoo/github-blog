@@ -1,9 +1,9 @@
 import { Profile } from '../../components/Profile'
-import { PostCard, PostList, SearchForm } from './styles'
+import { Container, PostCard, PostList, SearchForm } from './styles'
 
 export function Home() {
   return (
-    <>
+    <Container>
       <Profile />
 
       <SearchForm action="">
@@ -109,6 +109,6 @@ export function Home() {
           </p>
         </PostCard>
       </PostList>
-    </>
+    </Container>
   )
 }
