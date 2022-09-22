@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Profile } from '../../components/Profile'
+import { ProfileCard } from '../../components/ProfileCard'
 import { Container, PostCard, PostList, SearchForm } from './styles'
 import { formatDistanceToNowPtBR } from '../../utils/formatter'
 
@@ -36,7 +36,7 @@ export function Home() {
 
   return (
     <Container>
-      <Profile />
+      <ProfileCard />
 
       <SearchForm action="">
         <header>
@@ -49,7 +49,7 @@ export function Home() {
 
       <PostList>
         {posts?.items.map((post) => (
-          <PostCard key={post.number} href="/">
+          <PostCard key={post.number} to={`/posts/${post.number}`}>
             <header>
               <h2>{post.title}</h2>
               <span>{formatDistanceToNowPtBR(new Date(post.created_at))}</span>

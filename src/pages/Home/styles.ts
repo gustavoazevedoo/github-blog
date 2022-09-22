@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
   padding: 0 1.25rem;
@@ -51,7 +52,7 @@ export const PostList = styled.section`
   gap: 2rem;
 `
 
-export const PostCard = styled.a`
+export const PostCard = styled(Link)`
   display: block;
 
   font-size: 1rem;
@@ -81,7 +82,7 @@ export const PostCard = styled.a`
       font-size: 1.25rem;
       color: ${({ theme }) => theme['base-title']};
 
-      /* max-width: 17.5rem; */
+      max-width: 17.5rem;
     }
 
     span {

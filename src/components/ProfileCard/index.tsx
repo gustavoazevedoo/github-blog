@@ -26,7 +26,7 @@ interface User {
   followers: number
 }
 
-export function Profile() {
+export function ProfileCard() {
   const [user, setUser] = useState({} as User)
 
   async function getGithubUser() {
