@@ -19,7 +19,6 @@ interface PostProps {
 
 export function Post() {
   const [post, setPost] = useState<PostProps>({} as PostProps)
-  console.log('🚀 ~ file: index.tsx ~ line 22 ~ Post ~ post', post)
   const { postNumber } = useParams()
 
   const loadPost = useCallback(async () => {
